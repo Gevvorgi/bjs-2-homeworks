@@ -73,10 +73,12 @@ function averageEvenElementsWorker(...arr) {
 function makeWork (arrOfArr, func) {
   let maxWorkerResult = -Infinity;
 
+
   for(let i = 0; i < arrOfArr.length; i++){
     const resalt = func(...arrOfArr[i])
     
     maxWorkerResult < resalt ? maxWorkerResult = resalt : maxWorkerResult = maxWorkerResult
   }
   return maxWorkerResult
+
 }
